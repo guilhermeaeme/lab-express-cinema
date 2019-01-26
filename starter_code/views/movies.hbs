@@ -1,0 +1,16 @@
+<!--movies.hbs-->
+
+<h1>Ironhack Cinema</h1>
+<p>
+    Click on the movies to check the showtimes!
+</p>
+
+{{#each movies}}
+    <p>
+        <a href="movie/{{this._id}}">
+            <img src="{{this.image}}" /><br />
+            {{this.title}}<br />
+            See more
+        </a>
+    </p>
+{{/each}}
